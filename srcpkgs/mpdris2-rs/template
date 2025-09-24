@@ -1,5 +1,5 @@
-# Template file for 'mpdris2-rc'
-pkgname=mpdris2-rc
+# Template file for 'mpdris2-rs'
+pkgname=mpdris2-rs
 version=1.0.2
 revision=1
 build_style=cargo
