@@ -1,0 +1,23 @@
+# Template file for 'wallust'
+pkgname=wallust
+version=3.4.0
+revision=1
+build_style=cargo
+hostmakedepends="pkg-config libgit2"
+makedepends="libgit2-1.9-devel"
+short_desc="Generate colors from an image"
+maintainer="Stefan <s@omfm.ru>"
+license="MIT"
+homepage="https://codeberg.org/explosion-mental/wallust"
+distfiles="https://codeberg.org/explosion-mental/wallust/archive/${version}.tar.gz"
+checksum=2fa1b604a70026ff9ed853cc43bb5d4bed6c17ea1a0cea08563447bd5df5ddfb
+
+post_install() {
+	vman man/wallust-cs.1
+	vman man/wallust-run.1
+	vman man/wallust-theme.1
+  vman man/wallust.1
+	vman man/wallust.5
+	vlicense LICENSE
+}
+
