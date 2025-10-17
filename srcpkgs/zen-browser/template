@@ -25,7 +25,7 @@ do_install() {
     # Install the icons
     for size in 16x16 32x32 48x48 64x64 128x128; do
         mkdir -p ${DESTDIR}/usr/share/icons/hicolor/${size}/apps
-        vinstall browser/chrome/icons/default/default${size%x*}.png 0644 usr/share/icons/hicolor/${size}/apps zen-browser.png
+        vinstall browser/chrome/icons/default/default${size%x*}.png 0644 usr/share/icons/hicolor/${size}/apps zen.png
     done
 }
 
